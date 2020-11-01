@@ -1,0 +1,26 @@
+使用说明linux版：以lu2in019为例
+
+
+０。配置github账户（具体谷歌或者参见github教程）
+https://docs.github.com/cn/free-pro-team@latest/github/getting-started-with-github/quickstart
+	主要步骤：
+		注册github账号
+		配置ssh　key　谷歌：github　ssh　key　如何配置
+		本地账户配置　谷歌：
+
+１。上手
+	创建对应目录：
+		在你选择的地方，创建一个用来放代码的总目录
+		在此处打开terminal
+	克隆目录到本地：
+		进入到github文件的repository，网址如下：
+		https://github.com/patrolSU2019/lu2in019
+		文件右上角绿色的code按钮，选择ssh，复制地址
+		在terminal中输入
+		git clone git@github.com:patrolSU2019/lu2in019.git
+		接下来进入文件夹，终端中输入
+		cd lu2in019/
+		然后你就把代码克隆到机子上了
+
+２。检查更新（看看别人是否写好了代码）
+	

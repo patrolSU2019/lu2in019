@@ -38,7 +38,7 @@ let quartetAdder ((d1, c1, b1, a1): quartet) ((d2, c2, b2, a2): quartet) (r: bit
 (* Q8 *)
 let toQuartet (number : int) : quartet = (fun f (a, b, c, d) -> (f a, f b, f c, f d)) (fun x -> number/x mod 2 = 1) (8, 4, 2, 1)
 
-let _ = assert (quartetAdder (toQuartet 8) (toQuartet 7) false = ((toQuartet 15), false))
+let _ = assert (quartetAdder (toQuartet 8) (toQuartet 7) true = ((toQuartet 15), true))
 let _ = assert (quartetAdder (toQuartet 8) (toQuartet 8) true = ((toQuartet 1), true))
 let _ = assert (quartetAdder (toQuartet 0) (toQuartet 0) true = ((toQuartet 1), false))
 let _ = assert (quartetAdder (toQuartet 0) (toQuartet 0) false = ((toQuartet 0), false))
